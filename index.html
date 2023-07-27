@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="/assets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="stylesheet" href="./prework-study-guide/assets/style.css">
+    <title>Prework Study Guide</title>
+  </head>
+  <body>
+    <header id="top">
+      <h1>Prework Study Guide</h1>
+      <img src="/assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+      <h2>✨ Open the Console to See What's Happening ✨</h2>
+    </header>
+    <main>
+         <section class="card" id="html-section">
+<h2>HTML</h2>
+     <ul>
+       <li>HTML is one of three common languages used in web development along with CSS and JS.</li>
+     <li>HTML provides the structure of websites like the frame of a house.</li><li>The head element contains mostly metadata which apart from the title is for the browser not the user.</li>
+     <li>The body element represents the visible content shown to the user.</li><li>Elements with other elements nested inside are called parent elements whereas the nested elements are called child elements</li><li>Semantic elements which are elements whose name describes its role and content are preferred in the body over code that relates to format.</li><li>Tags are short words or abbreviations between the pointy brackets that open and close an element whereas the element is everything nested between in that block of code.</li><li>p is a commonly used tag to make a paragraph ul is for unnumbered list and li for list item</li><li>For screen readers it is important to use the headings h1 to h6 in descending order of size and to include along with an image source an alt text string describing the image. The alt description can also boost search engine hits</li>
+     </ul>
+   </section>
+
+   <section class="card" id="css-section">
+<h2>CSS</h2>
+     <ul>
+       <li>There are three ways to style a webpage using CSS: inline CSS, a way to change individual elements in the HTML code, internal CSS style sheet, a way to include style rules in an HTML head, and external CSS style sheet (most common), which keeps all style rules in a separate CSS file linked within the HTML head.</li><li>Separation of concerns is the concept that each section of code should have its own responsibility.</li><li>CSS rules are structured with a selector outside wavy brackets and a declaration block within wavy brackets and subdivided into properties and values separated by colons and separated by semi colons from the next property and value set.  The selector defines what elements of the page the rules in the declaration block will apply.</li><li>Selectors can be two terms separated by a comma eg header and footer if you want the declaration block to apply to both. This helps to create don’t repeat yourself DRY code which is more compact and easier to maintain.</li><li>CSS box model means that each HTML element nests the content within layers of padding, border and margin.  Margin refers to the space outside the element, padding to what is within the element.  If you add a value to the padding you make the element bigger.</li><li>When CSS uses the wildcard or * as selector it means that all elements on the page will have the rule applied.</li><li>Besides text you can also apply CSS rules to images. The img selector will format all images in the markup.  Display property and block value means every img starts on a new line. Imgs can also be formatted for height width and margin-left and margin-right.</li><li>Unnumbered lists ul can also be a selector for CSS rules formatted for padding-left and font-size
+Paragraphs p can also be a selector for CSS rules, formatted for text-align and font-size.</li><li>The CSS style sheet needs to be linked to the HTML code within the head in the index file after the last meta element and before the title element using link rel=“stylesheet” href=./assets/style.css” in pointy brackets.</li><li>Class selectors can be used in CSS to apply rules selectively to elements on a page.  The period before the selector term designates it as a class selector.  Eg .card makes a text box that can be valued in terms of various properties like width, margin, border, and box-shadow.</li><li>Colour values can be specified in English or using hexadecimal codes.  Refer to the HTML color codes website for the code key.</li>
+     </ul>
+   </section>
+
+   <section class="card" id="git-section">
+<h2>Git</h2>
+     <ul>
+      <li>Git is version control software for web developers which logs a history of changes to a project under development.</li>
+    <li>Git is engaged using command line.  The preface is always "git"</li>
+    <li>Git hub is the web interface of git. It allows multiple developers to work at their local machines making edits to a project simultaneously without getting in each others way.  Github integrates all their changes  into one copy of the project.</li>
+    <li>Every project on GitHub is called a repository (repo), a remote web-based location where all the files relating to a project are stored together with their revision history</li>
+    <li>A branch is a workspace where a developer can make changes without changing the main branch (local) or the live state of the project. Branch names should describe the work being done on the branch.</li>
+    <li>Content files in GitHub are formatted in markdown (.md), a way to write for the web using plain text that easily converts to html.</li>
+    <li>To add/save/push changes up to the branch of the project being worked on requires a “commit”.</li>
+    <li>After committing changes to the branch being worked on, the next step is to submit a pull request (PR) which asks for changes on a branch to be merged into another branch. At the pull request stage, reviews of the changes from other developers may be solicited.</li>
+    <li>In the pull request form, besides the summary title describing the changes, there is box where developers can be descriptive about the changes they made. Github will also highlight the various edits.</li>
+    <li>Merging upon the pull request approval integrates/pushes the changes up to the main (remote, live, default, master) branch.</li>
+    <li>Issues establish a “to do” list for the project.  New issues are created in markdown for every aspect of the project that needs working on.  They provide a way for developers to report new tasks and content fixes and track progress on the project board, because as tasks are completed their issues will be closed.  Attachments of word or google doc files where the content is being created can also be made when creating an issue.</li>
+    <li>Helper programs: there is a desktop version of GitHub which allows for developers to work locally. Or use a markdown editor like VS (Visual Studio) code which allows developers to code on their local machines and preview that code in a browser (using the extension “open in browser”) before it is pushed it up to git hub. VS code will require the repo to be cloned and transferred to the local machine via a git clone + SSH code value command in command line.  The SSH code value is obtained by copying the SSH value stored under the green “code” button within the Github repo.  There is a further development tool ChromeDevTools which is built into the Chrome browswer, helpful for debugging.</li>
+    <li>The GitHub workflow (1): Choose an open issue and create the branch where you will work on it using command line or the forms in Git hub desktop.  Before you begin working locally confirm that you are in the right repository/folder, working on your branch not on “main,” and that you have cloned the most updated version of the main branch for your working branch.</li>
+    <li>The Github workflow (2): Go into your markdown editor, VS Code, and write your code or make your changes.</li>
+    <li>The Github workflow (3): When you are done you need to stage your changes by command line or Git hub desktop.  Command line will give you an account of how many changes were made, Git hub desktop will actually show you by displaying the changes in green and the old content in red.</li>
+    <li>The Github workflow (4): After staging you commit, including a message which explains what was changed (in a form on Github desktop, in quotes in command line).</li>
+    <li>The Github workflow (5): After committing you can open your repo in GitHub and see that the commit has been tracked.  Within GitHub you can open a pull request form.  Make sure you are seeking to merge to the right place.  On the pull request form, use the title and comment box to be really descriptive about what changes you are seeking to add to the project.</li>
+    <li>The Github workflow (6): Merge. If the pull request is merge compatible you can go straight ahead and commit to the merge.  If the pull request must be approved contingent upon a certain number of reviews received you must wait for this green light, then go ahead with the merge to the main branch.</li>
+    <li>The Github workflow (7): Deploy means to publish it and make it available to everyone on the world wide web.</li>
+    <li>In Git branching, a feature branch is a branch that holds code in development for a single feature of a webpage.  A Develop branch can hold several feature branches but has not yet been merged with the main branch.</li>
+    <li>The work goes on on your local version of the feature branch.  A commit is what saves that work to the feature branch of the Github repo (remote). The pull request and merge are what adjust the main branch in the repo according to the changes made on your branch.</li>
+    <li>Code sequence needed to engage the Github workflow (1):  Navigate to your local folder using command line cd and folder name.  Git status command will confirm which folder you’re in.</li>
+    <li>Code sequence needed to engage the Github workflow (2): From the main branch (local) create a feature branch using this code: git checkout -b feature/<name you give the branch>.  Let’s parse.  Git is the prefix to all git commands entered into command line.  Checkout means to change to this branch -b means it’s a new branch, feature/<name> means that it’s a feature branch with the name you assign.</li>
+    <li>Code sequence needed to engage the Github workflow (3): Git status again can be used to confirm that work is being done from the new branch.  You can now switch from command line into VS code where the explorer will now allow you to open and work on the relevant file (local copy).</li>
+    <li>Code sequence needed to engage the Github workflow (4): When finished in VS code, save and stage the changes on your local branch using the command line code git add -a.  “Staging” (the “add” term) means indicating to git that we want to record the changes made to that file. The -a flag signifies “all files”.  Staging is an important step.  If you commit without staging or make new changes after staging git won’t record the changes.</li>
+    <li>Code sequence needed to engage the Github workflow (5): The command line code for committing changes after staging is git commit -m “<descriptive message on the nature of the changes>”.  The flag -m stands for “message.”  Commit messages must be in quotation marks.  There are no pointy brackets in the command, just eg. git commit -m “fixed bug in html main file header”.</li>
+    <li>Code sequence needed to engage the Github workflow (6): Next, pull the most updated version of the main source code from GitHub to be sure that that is what the changes will be merged with.  Use the command git pull origin main.</li>
+    <li>Code sequence needed to engage the Github workflow (7): Push your changes to the feature branch in the repo using the code git push origin and the name of your feature branch eg feature/html.  “Origin” in this sequence means that it’s the source code stored remotely at GitHub that you want to affect. You are still only pushing from your local branch to a branch. This branch to branch pushing is essential to keep bugs from breaking the main code.  Now you can complete the process within Github.</li>
+    <li>Github workflow (8): Within GitHub create a pull request.  Make sure that in the “base” and “compare” boxes “main” and “feature branch” are showing respectively.</li>
+    <li>Github workflow (9): Finish the process by confirming the Merge.</li>
+    <li>Github workflow (10): Close the Issue if your changes have definitively addressed it.</li>
+    <li>Again!  When you begin to work enter the following into the command line: (i) git status (should be main). (ii) Git checkout -b feature/html (html is just an example of a name here, name could be something else). (iii) Git status (should be the newly created feature branch).</li>
+    <li>In VS code: (i) navigate to the file you want to work on in explorer and (ii) make changes.</li>
+    <li>When you are done making changes enter the following into the command line: (i) git add -A to stage changes. (ii) Git commit -m “add changes to html header” (messages are conventionally in the present imperative though it might feel more natural to say “added”). (iii) Git pull origin main (should confirm you are working off the latest version). (iv.) Git push origin feature/html.</li>
+    <li>In Github: (i) you will see a notification of your recent commit and an opportunity to open a PR (green button opens the PR form).  Here make sure that the base and compare values are the way you want them (base is main, compare is your feature branch) (ii) Merge (iii) Close the Issue. (iv) Malaika Carpenter’s video says best practice is then to delete the branch but we have not been doing this in the precourse work.</li>
+     </ul>
+   </section>
+
+   <section class="card" id="javascript-section">
+<h2>JavaScript</h2>
+     <ul>
+       <li>JavaScript is the tool that takes a static HTML/CSS webpage and makes it interactive (click buttons, retrieve data, form filling etc).</li>
+       <li>Basic JavaScript features include variables, strings, and data types.</li>
+       <li>Control flow is the order in which a computer executes code in a JavaScript file. It allows for the addition of conditional logic to applications.</li>
+       <li>Arrays are single variables that are used to hold a group of data (usually related data, maybe different data types). Forward loops operate on each element in an array which is useful when wanting to perform a task on multiple pieces of data at once.</li>
+       <li>JavaScript is an object-oriented programming (OOP) language.  Concepts such as conditional logic and arrays will transfer to many other OOP languages.</li>
+       <li>Create an array by declaring a variable eg. var shapes = [“triangle”, “square”, “pentagon”, “circle”]; example of different data types held in an array: var studentInfo = [“Lu”, 54, true]; Note the string is in quotes but the number and boolean value are not</li>
+       <li>Individual data items stored in an array have a unique number called an index. This allows for working with each item in an array individually.  The first item in any array has an index of 0, not 1, and index numbers for each item will go up by one whole number from there.  Access to an individual item in an array is by this form: shapes[0].  It is the name of the variable that stores the array, then the index of the individual item you want in square brackets, in this case the first item in the sequence of the array.</li>
+       <li>A for loop enables a single code block to be executed on each item in an array.  They are stopped by a conditional “if” statement making the execution operate a specific number of times rather than infinitely.  In order to use the for loop, we need the shape's index and the array's length. We can find the length of an array by using a built-in property of an array, named “length.”</li>
+       <li>A for loop starts with “for” and contains 3 statements.  The first, declaring a variable, determines the starting point of the loop var x = 0; second is the condition.  As long as the number in the variable x is less than the length of the array, the loop will keep running.  Here the word “length” references the built-in array property: x<shapes.length; finally comes the statement that allows the array to iterate over each item. x+1 (or x++) tells the computer that the iterations apply to the next whole number.</li>
+       <li>JavaScript itself is compact, but developers have written a variety of tools on top of the core JavaScript language, which include: Browser APIs (Application Programming Interfaces) which allow you to create HTML and CSS from within a browser, collect and manipulate webcam footage and generated 3D graphics and audio samples.  Third party APIs which access eg. Twitter and Facebook, Third party frameworks and libraries which hasten the building of HTML applications.  ChromeDevTools is one of the most useful browser APIs.  It provides a web console for testing software in development.  It is opened while viewing a VSCode file in the browser and entering the Mac command cmd+opt+I (as in igloo)</li>
+       <li>script files in JS need to be linked to the index file, so that the interactivity is applied to the HTML structure of the application. The link with the reference to the js file is added in the body part of the html code unlike the css file which was added to the head.  It is done as the last line of code before the closure of the body.</li>
+       <li>Variables are containers that store values. They are what make applications dynamic. You start by declaring a variable with“let” followed by the variable name. Variable names are case sensitive and there is a list of invalid ones. A semicolon at the end of a line indicates where a statement ends.</li>
+       <li>Methods eg console.log (topics) are sets of instructions that can be executed by a computer. Here the word “console” refers to a test environment that developers use to check out their code. The “.log()” method will output whatever we add inside the parentheses to the console (here the variable, “topics”) which, being within parentheses functions as an “argument” in this statement.</li>
+       <li>The units of JS code are called “statements”.</li>
+       <li>After declaring a variable you give it a name eg. “MyVariable = Bob” or declare and give value on the same line “let MyVariable = ‘Bob.’”  Later in this code this can be changed, and variables can be given values of different data types.
+      </li>
+      <li>Different data types can be strings (text sequences, in single or double quotes), numbers (without quotes), boolean (true or false without quotes) arrays (multiple values stored in a single reference eg. Let MyVariable = [1, ‘Bob’, ‘Steve’, 10]; Members of the array can be referred to separately eg. MyVariable[0], MyVariable[1], etc.) and Objects (objects can be anything and can be stored in a variable).</li>
+      <li>Comments, rendered in this format /*Everything in between is a comment*/ or //This is a comment if there are no line breaks, are snippets of text that can be added along with code which the browser ignores.</li>
+      <li>An operator is a mathematical symbol that produces a result based on two values (or variables). Eg. Addition which adds two numbers or strings together, Subtraction, multiplication (uses an asterisk instead of an x) or division (uses a forward slash) which function as they would in math, assignment where you make a value equal to something Eg. Let MyVariable = ‘Bob,’ Strict equality  === This performs a test to see if two values are equal and of the same data type. It returns a true/false (Boolean) result. Not, Does-not-equal, !, !==.  This returns the logically opposite value of what it precedes. It turns a true into a false, etc.. When it is used alongside the Equality operator, the negation operator tests whether two values are not equal.</li>
+      <li>Conditionals are code structures used to test if an expression returns true or not. A very common form of conditionals is the “if…else” statement where the expression inside the “if () is the test. This uses the strict equality operator (as described above) to compare the variable ice cream with the string chocolate to see if the two are equal. If this comparison returns true, the first block of code runs. If the comparison is not true, the second block of code—after the else statement—runs instead.</li>
+      <li>Null is a special value in JavaScript that refers to the absence of a value.</li>
+      <li>Functions are a way of packaging functionality that you wish to reuse. You define a body of code as a function that executes when you call the function name in your code — a good alternative to repeatedly writing the same code.  Functions look like variables but are followed by parentheses ().</li>
+      <li>Functions often take arguments, bits of data which go inside the parentheses, separated by commas if there is more than one argument.</li>
+      <li>The “return” statement tells the browser to return the result variable out of the function so it is available to use.  This is necessary because variables defined inside functions are only available inside those functions.  This is called “variable scoping.”</li>
+      <li>Event handlers, code structures that listen for activity in the browser and run code in response, are used for real interactivity on a website. Eg. The click event is handled by the browser.</li>
+      <li>Event handlers can be attached to elements in several ways.</li>
+      <li>JS is a dynamic language with dynamic types (ie. it is nominalistic) because variables are not directly associated with any particular value type and variables can be assigned values of all types</li>
+      <li>JS is also a weakly typed language because it allows implicit type conversion (ie. it practices auto correct) when an operation involves mismatched types instead of throwing type errors.  For symbols and BigInts JS has intentionally disallowed certain kinds of implicit type conversion.</li>
+      <li>All types except object define immutable values represented directly at the lowest level of language called primitive values.</li>
+      <li>undefined indicates the absence of a value, while null indicates the absence of an object</li>
+      <li>The Boolean type represents a logical entity and is inhabited by two values: true and false.Boolean values are usually used for conditional operations.
+      </li>
+      <li>The Number type has a range outside of which they will be represented by a double-precision floating point approximation.</li>
+      <li>The BigInt type is a numeric primitive in JavaScript that can represent integers with arbitrary magnitude. With BigInts, you can safely store and operate on large integers even beyond the safe integer limit for Numbers. A BigInt is created by appending n to the end of an integer or by calling the BigInt() function.</li>
+      <li>The String type represents textual data. Each element in the string occupies a position in the string. The first element is indexed at 0 with whole number increases of 1 along the string.  JavaScript strings are immutable. This means that once a string is created, it is not possible to modify it. String methods create new strings based on the content of the current string, eg with substrings () and concatenations (+) or concat(). Use strings for textual data. When representing complex data, parse strings, and use the appropriate abstraction.</li>
+      <li>A Symbol is a unique and immutable primitive value. In some programming languages, Symbols are called "atoms". The purpose of symbols is to create unique property keys that are guaranteed not to clash with keys from other code.</li>
+      <li>An Object is a value in memory which is possibly referenced by an identifier. In JavaScript, objects are the only mutable values. Functions are, in fact, also objects with the additional capability of being callable.</li>
+      <li>Store arbitrary data in a Map rather than in objects.</li>
+      <li>Represent dates using the built-in date utility in JS.</li>
+      <li>Use arrays for ordered lists.</li>
+      <li>— Keyed collections are data structures take object references as keys. Set and Weak Set represent a collection of unique values, while Map and Weak Map represent a collection of key-value associations. Maps and WeakMaps make it easy to privately bind data to an object. WeakMap and WeakSet only allow garbage-collectable values as keys, thus are specifically used for memory usage optimization.</li>
+      <li>JSON (JavaScript Object Notation) is a lightweight data-interchange format, derived from JavaScript, but used by many programming languages. JSON builds universal data structures that can be transferred between different environments and even across languages.</li>
+      <li>JS has a standard library of built-in objects.</li>
+      <li>Type Coercion and Number coercion are employed by JS (autocorrect) but there are various rules that govern them making their corrections predictable.  All data types (string, boolean, object etc) have their respective coercion processes except Null, Undefined and Symbol.</li>
+      <li>Control flow refers to the way JS code’s default linear (top to bottom) execution can be interrupted using conditional statements and loops</li>
+      <li>Conditional statements use “if” to introduce decision-making into the code.  The form is “If (condition) { //block of code to be executed if condition is truthy}.  If the condition is not truthy then the computer will ignore whatever is between the curly brackets and move on.</li>
+      <li>A value is considered false if one of the following values: 0, -0,On, “”, null, undefined, NaN, or Boolean data type with the value of false.  All other values, including a Boolean with the value of true are considered truthy.</li>
+      <li>To create more than one condition use the form “else if (second condition)</li>
+      <li>Commenting out code in JS is done by inserting /* before the code block and */ after the code block.  Commenting out means the code is inactive but not deleted in case it is needed later.</li>
+      <li>Functions are an important part of JavaScript and many other programming languages.  A function is a set of instructions that tells the computer how to perform a certain task.  They differ from for loops and conditional statements because they do not automatically execute when the js file is run, but have to be called by name.  This is helpful because functions can be called again and again, and the programmer can control where in the control flow a task is executed or whether it is executed at all.</li>
+      <li>Create a function by using the function keyword followed by the unique name you want to give to the function. Eg. Function helloWorld() {//code block}.  A function’s name is followed by parentheses ().</li>
+      <li>When wrapping for loops or if statements in functions, indent the for loop line</li>
+      <li>To call a function, use the name of the function in the JavaScript file where you want the code to execute.</li>
+      <li>When you want to randomly pick a different item from the array each time, you need to use a special Math function.  Add a random topic variable that uses math.floor() and math.random() at the top of the js page (2nd line because the random topic variable will reference the variable topics which has not yet been defined, so it will need to be defined first in line 1). Math.floor() and math.random() are both properties of JavaScript's built-in Math object. Together they generate a random number.</li>
+      <li>Messages can be added before calling/executing the function listTopics to better explain the output in the console.  Messages are in this format: console.log (‘Here are the topics we learned through Prework:’)</li>
+      <li>Before the function selectTopic() is called/run, another explanatory statement can be inserted console.log(‘Which topic should we study first?’);</li>
+     </ul>
+   </section>
+    </main>
+
+    <footer>
+      <p>I can code!</p>
+    </footer>
+    <script src="/assets/script.js"></script>
+  </body>
+</html>
